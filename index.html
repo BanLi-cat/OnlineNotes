@@ -9,12 +9,14 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">Loading...(根据网络情况若等待时间较长, 请刷新页面重试！)</div>
   <script>
     window.$docsify = {
       name: '',
       repo: '',
+      // 每个页面的侧边栏都加载自定义的 _sidebar.md 文件生成侧边栏
       loadSidebar: true,
+      // 每个页面生成目录的最大层级. Markdown文件最多可以写6级标题
       subMaxLevel: 6,
 
     }
