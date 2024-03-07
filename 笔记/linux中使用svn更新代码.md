@@ -1,7 +1,5 @@
-# 要在Linux中下载和更新SVN代码,您可以按照以下步骤进行操作：
 
-
-## 1. 安装SVN客户端：
+## 安装SVN客户端：
 
 ```sh
 
@@ -10,7 +8,7 @@ sudo apt-get install subversion
 ```
 
 
-## 2. 下载代码：
+## 下载代码：
 
 ```sh
 
@@ -21,7 +19,7 @@ svn checkout SVN_URL LOCAL_PATH
 ```
 
 
-## 3. 更新代码：
+## 更新代码：
 
 ```sh
 
@@ -30,7 +28,7 @@ svn update LOCAL_PATH
 ```
 
 
-## 4. 提交更改：
+## 提交更改：
 
 ```sh
 
@@ -41,7 +39,7 @@ svn commit -m "commit message" LOCAL_PATH
 ```
 
 
-## 5. 查看代码状态：
+## 查看代码状态：
 
 ```sh
 

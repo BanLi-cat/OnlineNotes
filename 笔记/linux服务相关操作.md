@@ -1,4 +1,4 @@
-## scp上传本地文件到目标服务器
+## scp上传操作
 
 ```sh
 
@@ -44,7 +44,7 @@ pip install pyyaml -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
 
-## 查看linux服务器内存大小相关指令
+## linux内存查看
 
 ```sh
 

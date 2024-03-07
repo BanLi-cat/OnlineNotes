@@ -1,4 +1,4 @@
-## mysql执行方法一: pymysql连接池执行
+## pymysql连接池执行
 
 ```py
 
@@ -150,7 +150,7 @@ if __name__ == '__main__':
 ```
 
 
-## mysql执行方法二: pymysql执行
+## pymysql执行
 
 ```py
 
@@ -251,7 +251,7 @@ if __name__ == '__main__':
 ```
 
 
-## mysql执行方法三: peewee数据库执行
+## peewee数据库执行
 
 ```py
 

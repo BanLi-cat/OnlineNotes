@@ -1,7 +1,4 @@
-# 打包服务器中数据库数据迁移到本地服务中
-
-
-## 1. 打包对应数据库数据下载到本地服务器中
+## 打包数据到本地服务器
 
 ```sh
 
@@ -16,7 +13,7 @@ mysqldump -h 192.168.52.250 -u homed -p hys_import_disk23_cdn > /r2/z_homed/hys_
 ```
 
 
-## 2. 将文件转移到服务器中
+## 将文件转移到服务器中
 
 ```sh
 
@@ -29,7 +26,7 @@ scp /r2/z_homed/hys_import_disk23_cdn.sql root@192.168.49.210:/r2/z_home/upload_
 ```
 
 
-## 3. 将sql脚本中数据导入本地数据库
+## 将s数据导入本地数据库
 
 ```sh
 
@@ -38,7 +35,7 @@ mysql -h 192.168.24.14 -u username -p database_name < /path/to/backup_file.sql
 ```
 
 
-## 4. 导表失败
+## 导表失败
 
 ```sh
 

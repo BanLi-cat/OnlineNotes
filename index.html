@@ -24,21 +24,37 @@
 
       // 定位到指定的瞄点时，距离页面顶部有一定的空间，默认0
       topMargin: 15,
-      // // 复制到剪切板，匹配路由后显示中文或英文按钮文字, 错误提示, 成功提示
-      // copyCode: {
-      //   buttonText: {
-      //     '/': '复制代码',
-      //     '/en/': 'Copy to clipboard',
-      //   },
-      //   errorText: {
-      //     '/': '复制失败',
-      //     '/en/': 'Error',
-      //   },
-      //   successText: {
-      //     '/': '复制成功',
-      //     '/en/': 'Copied',
-      //   },
-      // },
+      // 复制到剪切板，匹配路由后显示中文或英文按钮文字, 错误提示, 成功提示
+      copyCode: {
+        buttonText: {
+          '/': '复制代码',
+          '/en/': 'Copy to clipboard',
+        },
+        errorText: {
+          '/': '复制失败',
+          '/en/': 'Error',
+        },
+        successText: {
+          '/': '复制成功',
+          '/en/': 'Copied',
+        },
+      },
+      // 字数统计
+      count:{
+        countable: true,
+        position: 'top',
+        margin: '10px',
+        float: 'right',
+        fontsize:'0.9em',
+        color:'rgb(90,90,90)',
+        language:'chinese',
+        localization: {
+          words: "",
+          minute: ""
+        },
+        isExpected: true,
+      }
+
 
 
 
@@ -51,6 +67,15 @@
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
   <!-- 复制到剪切板 -->
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <!-- 字数统计 -->
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+  <!-- 代码高亮 -->
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-xml-doc.min.js"></script>
+
+
 
 
 </body>

@@ -1,7 +1,4 @@
-
-# linux中搭建mysql服务
-
-## 1. 下载mysql安装包
+## 下载mysql安装包
 
 ```sh
 
@@ -10,7 +7,7 @@ wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.27-linux-glibc2.12-
 ```
 
 
-## 2. 解压压缩包
+## 解压压缩包
 
 ```sh
 
@@ -22,17 +19,18 @@ mv mysql-5.7.27-linux-glibc2.12-x86_64 /usr/local/mysql
 ```
 
 
-## 3. 创建mysql用户组和用户并修改权限
+## mysql用户组和用户操作
 
 ```sh
 
+# 创建mysql用户组和用户并修改权限
 groupadd mysql
 useradd -r -g mysql mysql
 
 ```
 
 
-## 4. 创建数据目录并赋予权限
+## 创建数据目录并赋予权限
 
 ```sh
 
@@ -45,7 +43,7 @@ chown mysql:mysql -R /data/mysql
 ```
 
 
-## 5. 配置my.cnf
+## 配置my.cnf
 
 ```sh
 
@@ -76,7 +74,7 @@ lower_case_table_names=1
 ```
 
 
-## 6. 初始化数据库
+## 初始化数据库
 
 ```sh
 
@@ -89,7 +87,7 @@ cd /usr/local/mysql/bin/
 ```
 
 
-## 7. 查看密码
+## 查看密码
 
 ```sh
 
@@ -98,7 +96,7 @@ cat /data/mysql/mysql.err
 ```
 
 
-## 8. 启动mysql，并更改root 密码
+## 启动mysql，更改root 密码
 
 ```sh
 
@@ -118,7 +116,7 @@ service mysql restart
 ```
 
 
-## 9. 启动如果成功会有提示成功，查看进程
+## 启动成功，查看进程
 
 ```sh
 
@@ -127,7 +125,7 @@ ps -ef|grep mysql
 ```
 
 
-## 10. 修改密码
+## 修改密码
 
 ```sh
 
@@ -145,7 +143,7 @@ FLUSH PRIVILEGES;
 ```
 
 
-## 11. 开启远程登录
+## 开启远程登录
 
 ```sh
 
@@ -176,9 +174,11 @@ exit
 ```
 
 
-## 12. 要将 MySQL的可执行文件路径添加到linux服务器的环境变量中，可以按如下步骤进行
+## 环境变量配置
 
 ```sh
+
+## 要将 MySQL的可执行文件路径添加到linux服务器的环境变量中，可以按如下步骤进行
 
 # a. 在linux服务器上登录到root管理员账户。
 
@@ -200,9 +200,8 @@ source /etc/profile
 ```
 
 
-# linux中安装mysql相关的包出错
+## linux安装mysql相关的包出错
 
-## MySQL部分配置错误
 
 ```sh
 

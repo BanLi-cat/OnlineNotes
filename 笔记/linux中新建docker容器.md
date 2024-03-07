@@ -1,7 +1,4 @@
-# 基于centos 7系统创建Python3环境新镜像
-
-
-## 1. 执行下载Python3环境包
+## 执行下载Python3环境包
 
 ```sh
 
@@ -10,9 +7,11 @@ wget https://www.python.org/ftp/python/3.8.0/Python-3.8.0.tgz
 ```
 
 
-## 2. 新建 Dockerfile 文件，填充内容
+## 新建Dockerfile文件
 
 ```sh
+
+# 基于centos 7系统创建Python3环境新镜像
 FROM centos:7
 LABEL maintainer="zyanwei2011@163.com"
 LABEL description="centos7 & python3.8"
@@ -80,7 +79,7 @@ RUN ln -sf /usr/share/zoneinfo/Asia/ShangHai /etc/localtime
 ```
 
 
-## 3. 执行创建docker新镜像
+## 执行创建docker新镜像
 
 ```sh
 
@@ -98,7 +97,7 @@ docker run -it python3-image /bin/bash
 ```
 
 
-## 4. docker容器相关指令
+## docker容器相关指令
 
 ```sh
 
