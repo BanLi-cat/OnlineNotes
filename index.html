@@ -9,6 +9,9 @@
   <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"> -->
   <!-- 界面 bule主题-->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/buble.css">
+  <!-- 在 Github 上修改此页-->
+  <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
+
 
 </head>
 <body>
@@ -53,7 +56,26 @@
           minute: ""
         },
         isExpected: true,
-      }
+      },
+      // 插件
+      plugins: [
+        // 在 Github 上修改此页
+        EditOnGithubPlugin.create(
+          // github 项目文件夹
+          'https://github.com/BanLi-cat/OnlineNotes/tree/master',
+          // 编辑你的 github页面的链接，默认情况下，这是根据自动设置的docBase
+          'https://github.com/BanLi-cat/OnlineNotes/tree/master',
+          // 编辑按钮的文字 默认值: Edit on github 。 如果作为函数传递，则可以根据文件路径自定义标题
+          function(file) {
+            if (file.indexOf('en') === -1) {
+              return '在 Github 上编辑此页'
+            } else {
+              return 'edit on git'
+            }
+          }
+        )
+      ],
+
 
 
 
@@ -74,6 +96,13 @@
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-xml-doc.min.js"></script>
+  <!-- 离线模式（PWA） -->
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('sw.js')
+    }
+  </script>
+  
 
 
 
