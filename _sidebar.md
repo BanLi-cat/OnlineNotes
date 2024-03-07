@@ -1,6 +1,6 @@
-<!-- * 首页
+* 首页
 
-  * [Headline](/ "BanLi笔记") -->
+  * [Headline](/ "BanLi笔记")
 
 * 笔记
 
