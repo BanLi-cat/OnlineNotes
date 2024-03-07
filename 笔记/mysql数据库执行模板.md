@@ -360,8 +360,8 @@ if __name__ == '__main__':
 
 ```
 
-
-## pymysql数据库执行
+ 
+## pymysql 执行
 
 ```py
 

@@ -18,6 +18,6 @@
   * [linux中打包数据库资源](/笔记/linux中打包数据库资源.md "BanLi笔记 - linux中打包数据库资源")
   * [linux中使用svn更新代码](/笔记/linux中使用svn更新代码.md "BanLi笔记 - linux中使用svn更新代码")
   * [linux中新建docker容器](/笔记/linux中新建docker容器.md "BanLi笔记 - linux中新建docker容器")
-  * [mysql-数据库执行模板](/笔记/mysql-数据库执行模板.md "BanLi笔记 - mysql-数据库执行模板")
+  * [mysql数据库执行模板](/笔记/mysql数据库执行模板.md "BanLi笔记 - mysql数据库执行模板")
   * [sh脚本示例](/笔记/sh脚本示例.md "BanLi笔记 - sh脚本示例")
 
