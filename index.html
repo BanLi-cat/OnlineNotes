@@ -6,7 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"> -->
+  <!-- 界面 bule主题-->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/buble.css">
+
 </head>
 <body>
   <div id="app">Loading...(根据网络情况若等待时间较长, 请刷新页面重试！)</div>
@@ -18,10 +21,42 @@
       loadSidebar: true,
       // 每个页面生成目录的最大层级. Markdown文件最多可以写6级标题
       subMaxLevel: 6,
+      // 启用封面页
+      coverpage: {
+        '/': '_coverpage.md',
+      },
+      // 路由模式，首页地址栏后不会出现 /#
+      routerMode: 'history',
+      // 定位到指定的瞄点时，距离页面顶部有一定的空间，默认0
+      topMargin: 15,
+      // 复制到剪切板，匹配路由后显示中文或英文按钮文字, 错误提示, 成功提示
+      copyCode: {
+        buttonText: {
+          '/': '复制代码',
+          '/en/': 'Copy to clipboard',
+        },
+        errorText: {
+          '/': '复制失败',
+          '/en/': 'Error',
+        },
+        successText: {
+          '/': '复制成功',
+          '/en/': 'Copied',
+        },
+      },
+
+
+
 
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- 图片缩放 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <!-- 复制到剪切板 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+
+
 </body>
 </html>
