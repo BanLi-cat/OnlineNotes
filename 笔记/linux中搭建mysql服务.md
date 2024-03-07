@@ -200,7 +200,7 @@ source /etc/profile
 ```
 
 
-## 安装mysql相关的包出错
+## 安装mysql相关包出错
 
 
 ```sh

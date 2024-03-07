@@ -361,7 +361,7 @@ if __name__ == '__main__':
 ```
 
 
-## mysql执行方法四: pymysql数据库执行
+## pymysql数据库执行
 
 ```py
 

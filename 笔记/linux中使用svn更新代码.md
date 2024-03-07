@@ -1,5 +1,5 @@
 
-## 安装SVN客户端：
+## 安装SVN客户端
 
 ```sh
 
@@ -8,7 +8,7 @@ sudo apt-get install subversion
 ```
 
 
-## 下载代码：
+## 下载代码
 
 ```sh
 
@@ -19,7 +19,7 @@ svn checkout SVN_URL LOCAL_PATH
 ```
 
 
-## 更新代码：
+## 更新代码
 
 ```sh
 
@@ -28,7 +28,7 @@ svn update LOCAL_PATH
 ```
 
 
-## 提交更改：
+## 提交更改
 
 ```sh
 
@@ -39,7 +39,7 @@ svn commit -m "commit message" LOCAL_PATH
 ```
 
 
-## 查看代码状态：
+## 查看代码状态
 
 ```sh
 

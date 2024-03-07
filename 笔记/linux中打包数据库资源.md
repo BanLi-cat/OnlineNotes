@@ -26,7 +26,7 @@ scp /r2/z_homed/hys_import_disk23_cdn.sql root@192.168.49.210:/r2/z_home/upload_
 ```
 
 
-## 将s数据导入本地数据库
+## 将数据导入本地数据库
 
 ```sh
 
